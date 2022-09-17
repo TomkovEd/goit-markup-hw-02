@@ -1,1 +1,109 @@
-/* Основний #F5F5F5 колир*/
+:root {
+  --main-bcg-colour: #f5f5f5;
+  --footer-bcg-colour: #2f303a;
+  --maint-text-colour: #2f303a;
+  --secondary-text-colour: #757575;
+  --accent-colour: #2196f3;
+  --contacts-header-colour: #757575;
+  --contacts-footer-colour: #ffffff;
+  --buttom-colour: #2196f3;
+  --top-logo-colour: #000000;
+  --bot-logo-colour: #ffffff;
+  --title-colour: #212121;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--maint-text-colour);
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+.header-link:hover {
+  color: var(--accent-colour);
+}
+.link:focus {
+  font-variant: var(--accent-colour);
+}
+/*----------------Header---------------*/
+.header {
+  background-color: var(--main-bcg-colour);
+}
+
+/*Logo*/
+.header-logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19em;
+  letter-spacing: 0.03em;
+}
+
+.header-logo-web {
+  color: var(--buttom-colour);
+}
+
+.header-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+/* Contacts */
+
+.header-mail,
+.header-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.02em;
+  color: var(--contacts-header-colour);
+}
+
+/*-----------Hero---------------*/
+.hero {
+  background-color: var(--footer-bcg-colour);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--bot-logo-colour);
+}
+
+.hero-button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+/*--------------fEATURES--------------*/
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-colour);
+}
+.features-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-colour);
+}
