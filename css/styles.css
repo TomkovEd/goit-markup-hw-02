@@ -10,11 +10,15 @@
   --top-logo-colour: #000000;
   --bot-logo-colour: #ffffff;
   --title-colour: #212121;
+  --port-btn-bcg-colour: #f5f4fa;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
   color: var(--maint-text-colour);
+  background-color: var(--main-bcg-colour);
 }
 
 .list {
@@ -40,8 +44,7 @@ body {
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19em;
-  letter-spacing: 0.03em;
+  line-height: 1.19;
   color: var(--top-logo-colour);
 }
 
@@ -53,10 +56,15 @@ body {
 .header-link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14em;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-colour);
 }
+
+.current {
+  color: var(--accent-colour);
+}
+
 .header-link:hover {
   color: var(--accent-colour);
 }
@@ -65,7 +73,7 @@ body {
 .header-contact-link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14em;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--contacts-header-colour);
 }
@@ -79,7 +87,7 @@ body {
 .hero-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36em;
+  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--bot-logo-colour);
@@ -87,10 +95,9 @@ body {
 
 .hero-button {
   font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.9em;
+  line-height: 1.9;
   display: flex;
   align-items: center;
   text-align: center;
@@ -99,10 +106,11 @@ body {
   background-color: var(--buttom-colour);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
 }
 /*--------------fEATURES--------------*/
 
-.hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -118,23 +126,20 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-colour);
 }
 .features-text {
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--secondary-text-colour);
 }
 /*--------------TASK----------------*/
-.task-title {
+.section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-colour);
 }
 .task-img {
@@ -160,14 +165,12 @@ body {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-colour);
 }
 .team-speciality {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--secondary-text-colour);
 }
 
@@ -180,19 +183,16 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--bot-logo-colour);
 }
 .footer-adress {
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--bot-logo-colour);
 }
 .footer-link {
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-link:hover {
@@ -202,12 +202,13 @@ body {
 /*---------------PORTFOLIO--------------*/
 .port-btn {
   font-family: 'Roboto';
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  letter-spacing: 0.03em;
+  cursor: pointer;
+  color: var(--title-colour);
+  background-color: var(--port-btn-bcg-colour);
 }
 
 .port-btn:hover {
@@ -229,6 +230,5 @@ body {
 .port-text {
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
   color: var(--secondary-text-colour);
 }
